@@ -1,4 +1,4 @@
-
+import time
 import pygame
 
 from data.classes.Board import Board
@@ -36,3 +36,4 @@ if __name__ == '__main__':
 			running = False
 		# Draw the board
 		draw(screen)
+

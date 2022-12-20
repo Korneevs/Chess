@@ -132,11 +132,7 @@ class Board:
         if board_change is not None:
             old_square.occupying_piece = changing_piece
             new_square.occupying_piece = new_square_old_piece
-        for piece in pieces:
-            if piece.color != color:
-                for square in piece.attacking_squares(self):
-                    if square.pos == king_pos:
-                        output = True
+
         return output
 
 
